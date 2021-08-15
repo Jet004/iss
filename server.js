@@ -1,9 +1,17 @@
-const http = require('http');
+let express = require("express");
+let app = express();
 
-const server = http.createServer((req, res)=>{
-    res.end('Hello Node!');
+app.listen(3000, function(){
+    console.log("Hello Node! Welcome to port 3000!");
 })
 
-server.listen(9000, ()=>{
-    console.log('Server is running...');
-})
+
+// const http = require('http');
+
+// const server = http.createServer((req, res)=>{
+//     res.end('Hello Node!');
+// })
+
+// server.listen(9000, ()=>{
+//     console.log('Server is running...');
+// })
